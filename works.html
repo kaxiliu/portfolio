@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Works - kaxiliu.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        if (localStorage.getItem('theme') === 'dark') {
+            document.documentElement.classList.add('dark-mode');
+        }
+    </script>
+</head>
+
+<body>
+
+    <button id="theme-toggle" class="theme-toggle" aria-label="切换主题">
+        <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+    </button>
+
+    <header class="header">
+        <a href="index.html" class="logo" data-en="kaxiliu." data-zh="kaxiliu."
+            data-es="kaxiliu.">kaxiliu.</a>
+        <nav class="nav">
+            <a href="about.html" data-en="about" data-zh="关于" data-es="sobre mí">about</a>
+            <a href="works.html" class="active" data-en="works" data-zh="作品" data-es="proyectos">works</a>
+            <a href="contact.html" data-en="contact" data-zh="联系" data-es="contacto">contact</a>
+        </nav>
+
+        <div class="lang-switch">
+            <button id="lang-zh" onclick="switchLang('zh')">中</button>
+            <span class="divider">/</span>
+            <button id="lang-en" class="active" onclick="switchLang('en')">En</button>
+            <span class="divider">/</span>
+            <button id="lang-es" onclick="switchLang('es')">Es</button>
+        </div>
+    </header>
+
+
+    <main class="works-container">
+
+
+        <div class="works-illustration">
+            <img src="assets/tree.svg" alt="works illustration" class="works-svg light-svg">
+        </div>
+
+
+        <div class="works-grid">
+            
+
+            <div class="work-item">
+                <a href="https://www.credly.com/badges/d9f6ac39-d39b-424d-b3e9-ef4b685345e1/linked_in?t=tkf7vd" class="work-title" data-en="NttData Internship" data-zh="NttData 实习" data-es="Prácticas en NttData">NttData Internship</a>
+                <p class="work-desc" 
+                   data-en="Interned at NttData. Walked away with a ServiceNow cert and a solid grasp of the LowCode universe." 
+                   data-zh="在 NttData 摸爬滚打过一段时间。顺手拿了个 ServiceNow 证书，顺便也对 LowCode 的世界有点了解。" 
+                   data-es="Hice prácticas en NttData. Me llevé una certificación de ServiceNow y una buena comprensión del universo LowCode.">
+                   Interned at NttData. Walked away with a ServiceNow cert and a solid grasp of the LowCode universe.
+                </p>
+            </div>
+
+            <div class="work-item">
+                <a href="https://github.com/kaxiliu/JosakApp" class="work-title" data-en="JosakApp - Kotlin" data-zh="JosakApp - Kotlin" data-es="JosakApp - Kotlin">JosakApp - Kotlin</a>
+                <p class="work-desc" 
+                   data-en="A daily habit-tracking app built with an awesome team. Main feature? A little penguin keeps you company while you check in (will it starve if you skip a day?)." 
+                   data-zh="和神仙小组一起搓的日常习惯打卡 App。最大亮点是有只企鹅陪着你打卡（不打卡企鹅会饿吗？）。" 
+                   data-es="Una app de seguimiento de hábitos diarios creada con un equipo increíble. ¿La mejor característica? Un pequeño pingüino te acompaña mientras haces check-in.">
+                   A daily habit-tracking app built with an awesome team. Main feature? A little penguin keeps you company while you check in (will it starve if you skip a day?).
+                </p>
+            </div>
+
+            <div class="work-item">
+                <a href="https://github.com/kaxiliu/Gobang" class="work-title" data-en="Gomoku - C#" data-zh="五子棋 - C#" data-es="Gomoku - C#">Gomoku - C#</a>
+                <p class="work-desc" 
+                   data-en="The classic Chinese board game you know by heart. Let's see what kind of spark it makes with C#." 
+                   data-zh="耳熟能详的经典中国小游戏，看看它和 C# 能撞出怎么样的火花捏。" 
+                   data-es="El clásico juego de mesa chino que todo el mundo conoce. Veamos qué chispa crea con C#.">
+                   The classic Chinese board game you know by heart. Let's see what kind of spark it makes with C#.
+                </p>
+            </div>
+
+            <div class="work-item">
+                <a href="https://www.figma.com/proto/2jyu3BPTPk8IImpllDqX5j/Men%C3%BA-de-Restaurante?node-id=22-3&starting-point-node-id=22%3A3" class="work-title" data-en="Dim Sum - Figma" data-zh="广式早茶 - Figma" data-es="Dim Sum - Figma">Dim Sum - Figma</a>
+                <p class="work-desc" 
+                   data-en="Yes, I also do Figma. Check out my Dim Sum illustration." 
+                   data-zh="本人也会点 Figma，来康康我画的广式早茶（画饼充饥版）。" 
+                   data-es="Sí, también hago Figma. Echa un vistazo a mi ilustración de Dim Sum">
+                   Yes, I also do Figma. Check out my Dim Sum illustration.
+                </p>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <p>Copyright © 2026 kaxiliu. All Rights Reserved.</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

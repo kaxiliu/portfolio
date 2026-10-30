@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - kaxiliu.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        if (localStorage.getItem('theme') === 'dark') {
+            document.documentElement.classList.add('dark-mode');
+        }
+    </script>
+</head>
+
+<body>
+
+    <button id="theme-toggle" class="theme-toggle" aria-label="切换主题">
+        <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+    </button>
+
+  
+    <header class="header">
+        <a href="index.html" class="logo" data-en="kaxiliu." data-zh="kaxiliu."
+            data-es="kaxiliu.">kaxiliu.</a>
+        <nav class="nav">
+            <a href="about.html" class="active" data-en="about" data-zh="关于" data-es="sobre mí">about</a>
+            <a href="works.html" data-en="works" data-zh="作品" data-es="proyectos">works</a>
+            <a href="contact.html" data-en="contact" data-zh="联系" data-es="contacto">contact</a>
+        </nav>
+
+        <div class="lang-switch">
+            <button id="lang-zh" onclick="switchLang('zh')">中</button>
+            <span class="divider">/</span>
+            <button id="lang-en" class="active" onclick="switchLang('en')">En</button>
+            <span class="divider">/</span>
+            <button id="lang-es" onclick="switchLang('es')">Es</button>
+        </div>
+    </header>
+
+
+    <main class="about-container">
+
+        <div class="about-text">
+            <p data-en="Just a regular person." 
+               data-zh="一个平平无奇的人类。" 
+               data-es="Solo una persona normal.">
+               Just a regular person.
+            </p>
+            
+            <p data-en="Degree in DAM, recently survived DAW." 
+               data-zh="DAM 毕业，又刚把 DAW 熬完了。" 
+               data-es="Titulado en DAM, recientemente sobreviví a DAW.">
+               Degree in DAW, recently survived DAM.
+            </p>
+            
+            <p data-en="Currently diving headfirst into Frontend. Building things that look nice on screens is my latest obsession." 
+               data-zh="最近一头扎进了前端，觉得在屏幕上敲敲打打、拼凑出漂亮网页比啥都有意思。" 
+               data-es="Actualmente sumergiéndome de lleno en el Frontend. Construir cosas que se vean bien en pantalla es mi última obsesión.">
+               Currently diving headfirst into Frontend. Building things that look nice on screens is my latest obsession.
+            </p>
+            
+            <p data-en="When writing code, I spend most of my time agonizing over which font and color to use." 
+               data-zh="写代码的时候，大部分时间都在纠结用哪个字体和颜色。" 
+               data-es="Cuando escribo código, paso la mayor parte del tiempo agonizando sobre qué fuente y color usar.">
+               When writing code, I spend most of my time agonizing over which font and color to use.
+            </p>
+            
+            <p data-en="Currently on the job hunt. If you need someone who codes, designs, and draws cool SVGs, hit me up." 
+               data-zh="正在狂投简历中，如果你觉得我有点意思，或者缺个会用 CSS 画图的人，随时滴滴我。" 
+               data-es="Actualmente buscando trabajo. Si necesitas a alguien que programe, diseñe y dibuje SVGs geniales, contáctame.">
+               Currently on the job hunt. If you need someone who codes, designs, and draws cool SVGs, hit me up.
+            </p>
+            
+            <p data-en="(Also, yes, some days everything is falling apart — usually right when I can't debug a CSS layout issue.)" 
+               data-zh="（当然，偶尔也会觉得一切都在分崩离析，比如查 bug 找不到原因的时候。）" 
+               data-es="(Además, sí, algunos días todo se desmorona — generalmente justo cuando no puedo encontrar el error en un diseño CSS.)">
+               (Also, yes, some days everything is falling apart — usually right when I can't debug a CSS layout issue.)
+            </p>
+        </div>
+
+
+        <div class="cafe-svg-wrapper">
+            <img src="assets/cafe.svg" alt="cafe illustration" class="cafe-svg light-svg">
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>Copyright © 2026 kaxiliu. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kaxiliu.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+    <script>
+        if (localStorage.getItem('theme') === 'dark') {
+            document.documentElement.classList.add('dark-mode');
+        }
+    </script>
+</head>
+
+<body>
+
+    <button id="theme-toggle" class="theme-toggle" aria-label="切换主题">
+        <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+    </button>
+
+    <header class="header">
+        <a href="index.html" class="logo" data-en="kaxiliu." data-zh="kaxiliu." data-es="kaxiliu.">kaxiliu.</a>
+        <nav class="nav">
+            <a href="about.html" data-en="about" data-zh="关于" data-es="sobre mí">about</a>
+            <a href="works.html" data-en="works" data-zh="作品" data-es="proyectos">works</a>
+            <a href="contact.html" data-en="contact" data-zh="联系" data-es="contacto">contact</a>
+        </nav>
+
+        <div class="lang-switch">
+            <button id="lang-zh" onclick="switchLang('zh')">中</button>
+            <span class="divider">/</span>
+            <button id="lang-en" class="active" onclick="switchLang('en')">En</button>
+            <span class="divider">/</span>
+            <button id="lang-es" onclick="switchLang('es')">Es</button>
+        </div>
+    </header>
+
+    <main class="illustration-container">
+        <div class="scene-wrap">
+            <div class="speech-bubble">
+                <span data-en="say something?" data-zh="说点什么？" data-es="¿dime algo?">say something?</span>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>Copyright © 2026 kaxiliu. All Rights Reserved.</p>
+    </footer>
+
+     <script src="script.js"></script>
+</body>
+</html>
